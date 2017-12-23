@@ -1,5 +1,7 @@
 vim-LanguageTool
 ----------------
+Note: this is a fork of dpelle/vim-LanguageTool. Motivation: Fixing an issue to do with Java 9. Tested on Mac OS High Sierra 10.13.2.
+See following [issue](https://github.com/dpelle/vim-LanguageTool/issues/8)
 
 This plugin integrates the LanguageTool grammar checker into Vim.
 LanguageTool is an Open Source style and grammar checker for English,
@@ -67,7 +69,7 @@ You can use any popular plugin manager according to your preference.
 For example, with [Vundle](https://github.com/VundleVim/Vundle.vim),
 add this line in your `.vimrc`:
 ```
-Plugin 'dpelle/vim-LanguageTool'
+Plugin 'chimney37/vim-LanguageTool'
 
 ```
 
@@ -81,6 +83,13 @@ directory:
 
 ```
 And run `vim -c 'helptags ~/.vim/doc'`.
+
+# Install Java (Mac OS)
+```
+ brew update && brew cleanup
+ brew cask install java
+ java --version
+```
 
 # Download LanguageTool
 
@@ -100,7 +109,17 @@ checker. You can chose to:
 * or checkout and build the latest LanguageTool from sources in git
   from https://github.com/languagetool-org/languagetool
 
-Recent versions of LanguageTool require Java-8.
+* for MacOS, you can use brew (see below)
+
+Recent versions of LanguageTool require Java-8. This fork is updated to make this work for Java-9.
+
+## Install LanguageTool (Mac OS)
+
+```
+ brew install languagetool
+```
+* Note that "languagetool-gui" is not likely to run on Java 9 due to the same reason this fork was created. That will require another fix by languagetool.
+
 
 ## Download the stand-alone version of LanguageTool
 
