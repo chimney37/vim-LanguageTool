@@ -1,7 +1,9 @@
 vim-LanguageTool
 ----------------
 Note: this is a fork of dpelle/vim-LanguageTool. Motivation: Fixing an issue to do with Java 9. Tested on Mac OS High Sierra 10.13.2.
-See following [issue](https://github.com/dpelle/vim-LanguageTool/issues/8)
+
+See following [issue](https://github.com/dpelle/vim-LanguageTool/issues/8) 
+See also [issue](https://github.com/languagetool-org/languagetool/issues/830) in 'languagetool-org/languagetool'
 
 This plugin integrates the LanguageTool grammar checker into Vim.
 LanguageTool is an Open Source style and grammar checker for English,
